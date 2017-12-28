@@ -1,4 +1,4 @@
-setwd("/Volumes/STACY JIANG/DS_Spring2017/ML-DATS6202/PROJECT")
+#import data
 voice <- read.csv("voice.csv", header = T, sep = ",")
 counts <- summary(voice$label)  #50% male and 50% female, perfectly balanced 
 
