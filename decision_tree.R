@@ -3,7 +3,6 @@ voice <- read.csv("voice.csv", header = T, sep = ",")
 counts <- summary(voice$label)  #50% male and 50% female, perfectly balanced 
 
 set.seed(258)
-#shuffle the dataset and call the result shuffled
 n <- nrow(voice)
 index <- sample(1:n, n*0.8)
 train <- voice[index, ] 
